@@ -10,7 +10,6 @@ $char = "";
 }*/
 
 $char = $_POST['nom'];
-countWord($char);
 
 Function test_compte_nb_mots_ligne(){
 	return (
@@ -39,7 +38,6 @@ Function test_compte_nb_mots_ligne_four(){
 
 Function countWord($string){
 	return str_word_count($string);
-	var_dump($char);
 	// return count(explode(" ", trim($string)));
 }
 
