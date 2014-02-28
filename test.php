@@ -2,13 +2,6 @@
 
 $char = "";
 
-/*if(isset($_POST['nom']){
-	if($_POST['nom']!=""){
-		$char = $_POST['nom'];
-		countWord($char);
-	}
-}*/
-
 $char = $_POST['nom'];
 
 Function test_compte_nb_mots_ligne(){
@@ -54,6 +47,6 @@ lance_tests();
 ?>
 
 <form action="test.php" name="form">
-	<textarea name="nom"></textarea>
+	<textarea name="nom" value="nom"></textarea>
 	<input type="submit">
 </form>
