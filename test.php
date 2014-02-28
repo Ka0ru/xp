@@ -1,5 +1,17 @@
 <?php
 
+$char = "";
+
+/*if(isset($_POST['nom']){
+	if($_POST['nom']!=""){
+		$char = $_POST['nom'];
+		countWord($char);
+	}
+}*/
+
+$char = $_POST['nom'];
+countWord($char);
+
 Function test_compte_nb_mots_ligne(){
 	return (
 		3 == countWord("Salut les gens")
@@ -27,6 +39,7 @@ Function test_compte_nb_mots_ligne_four(){
 
 Function countWord($string){
 	return str_word_count($string);
+	var_dump($char);
 	// return count(explode(" ", trim($string)));
 }
 
@@ -42,4 +55,7 @@ lance_tests();
 
 ?>
 
-<textarea></textarea>
+<form action="test.php" name="form">
+	<textarea name="nom"></textarea>
+	<input type="submit">
+</form>
