@@ -46,7 +46,7 @@ lance_tests();
 
 ?>
 
-<form action="test.php" name="form">
+<form action="test.php" name="form" method="post">
 	<textarea name="nom" value="nom"></textarea>
 	<input type="submit">
 </form>
