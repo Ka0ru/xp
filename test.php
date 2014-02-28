@@ -10,6 +10,7 @@ Function test_compte_nb_mots_ligne_two(){
 	return (
 		3 == countWord(" Salut les gens ")
 	);
+}
 
 Function test_compte_nb_mots_ligne_three(){
 	return (
