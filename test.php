@@ -33,7 +33,6 @@ Function test_compte_nb_mots_ligne_four(){
 
 Function countWord($string){
 	return str_word_count($string);
-	var_dump($string);
 	// return count(explode(" ", trim($string)));
 }
 
