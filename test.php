@@ -40,3 +40,5 @@ lance_tests();
 
 
 ?>
+
+<textarea></textarea>
