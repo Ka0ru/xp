@@ -2,7 +2,9 @@
 
 $char = "";
 
-$char = $_POST['nom'];
+if ($_POST['nom']) {
+	echo "taggle";
+}
 
 Function test_compte_nb_mots_ligne(){
 	return (
@@ -46,7 +48,7 @@ lance_tests();
 
 ?>
 
-<form action="test.php" name="form" method="post">
-	<textarea name="nom" value="nom"></textarea>
-	<input type="submit">
+<form action="test.php" method="post">
+ <p><textarea name="nom"></textarea></p>
+ <p><input type="submit" /></p>
 </form>
